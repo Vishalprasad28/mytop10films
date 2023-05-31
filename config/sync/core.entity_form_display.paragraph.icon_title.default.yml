@@ -1,0 +1,34 @@
+uuid: 1c4cf370-f307-4e67-99b4-cb56a165901b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.icon_title.field_icon
+    - field.field.paragraph.icon_title.field_icon_decs
+    - paragraphs.paragraphs_type.icon_title
+id: paragraph.icon_title.default
+targetEntityType: paragraph
+bundle: icon_title
+mode: default
+content:
+  field_icon:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_icon_decs:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

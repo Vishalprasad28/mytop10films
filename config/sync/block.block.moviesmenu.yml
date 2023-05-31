@@ -1,0 +1,33 @@
+uuid: c05f52eb-3c74-4ae8-92c2-af6aa293fc78
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.movies-menu
+  module:
+    - system
+    - user
+  theme:
+    - bartik
+id: moviesmenu
+theme: bartik
+region: header
+weight: -7
+provider: null
+plugin: 'system_menu_block:movies-menu'
+settings:
+  id: 'system_menu_block:movies-menu'
+  label: Movies-menu
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated

@@ -1,0 +1,12 @@
+uuid: 759333c6-1c2e-460c-9159-621decc358f9
+langcode: en
+status: true
+dependencies: {  }
+id: contact_us
+label: 'Contact Us'
+recipients:
+  - vishaldemo28@gmail.com
+reply: ''
+weight: 0
+message: ''
+redirect: /contact

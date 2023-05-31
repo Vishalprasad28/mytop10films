@@ -1,0 +1,8 @@
+uuid: 6e5cbb3a-2921-4ddf-95f2-ff8d1af7e57e
+langcode: en
+status: true
+dependencies: {  }
+id: movies-menu
+label: Movies-menu
+description: 'It consists of the menu of the movie'
+locked: false

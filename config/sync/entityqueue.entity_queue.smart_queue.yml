@@ -1,0 +1,34 @@
+uuid: 37cbbfc2-cc73-4810-b51c-1d7db0e9d22c
+langcode: en
+status: true
+dependencies:
+  module:
+    - entityqueue_smartqueue
+    - node
+id: smart_queue
+label: 'smart queue'
+handler: smartqueue
+handler_configuration:
+  entity_type: node
+  bundles:
+    employee: employee
+    article: 0
+    page: 0
+    webform: 0
+    project: 0
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      employee: employee
+    sort:
+      field: created
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

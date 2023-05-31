@@ -1,0 +1,19 @@
+uuid: ce9bede5-03b9-492e-94f5-c0f86940ac27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon_decs
+    - paragraphs.paragraphs_type.icon_title
+id: paragraph.icon_title.field_icon_decs
+field_name: field_icon_decs
+entity_type: paragraph
+bundle: icon_title
+label: icon-decs
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

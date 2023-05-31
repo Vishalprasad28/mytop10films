@@ -1,0 +1,10 @@
+uuid: 5e30a20a-4f4e-44bb-b108-baefcef479c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.tech_skills
+label: 'tech skills'
+targetEntityType: paragraph
+cache: true

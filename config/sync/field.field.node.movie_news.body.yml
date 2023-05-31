@@ -1,0 +1,23 @@
+uuid: a2de37b8-6b1a-4016-8f17-cbe41cf25b42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.movie_news
+  module:
+    - text
+id: node.movie_news.body
+field_name: body
+entity_type: node
+bundle: movie_news
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

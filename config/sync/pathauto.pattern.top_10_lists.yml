@@ -1,0 +1,22 @@
+uuid: fdd48d6f-5fa4-47a4-8ede-a0495cf17ef0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: top_10_lists
+label: 'Top 10 Lists'
+type: 'canonical_entities:node'
+pattern: 'top-10-lists/[node:title]'
+selection_criteria:
+  0b0126ec-ff40-463b-b8d1-4927d6abb079:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 0b0126ec-ff40-463b-b8d1-4927d6abb079
+    context_mapping:
+      node: node
+    bundles:
+      movie_list: movie_list
+selection_logic: and
+weight: -5
+relationships: {  }

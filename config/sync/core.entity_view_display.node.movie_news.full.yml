@@ -1,0 +1,36 @@
+uuid: a280f67c-10b0-4b3e-bd2a-1ac6c3af6c12
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.movie_news.body
+    - field.field.node.movie_news.field_type_of_the_movie
+    - node.type.movie_news
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.movie_news.full
+targetEntityType: node
+bundle: movie_news
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_type_of_the_movie: true

@@ -1,0 +1,10 @@
+uuid: 5fa483e1-3a5b-4b23-8fc5-015895c6981c
+langcode: en
+status: true
+dependencies: {  }
+id: tech_skills
+label: 'Tech skills'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

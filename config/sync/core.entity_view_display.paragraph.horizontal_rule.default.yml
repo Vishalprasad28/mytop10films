@@ -1,0 +1,22 @@
+uuid: a72d1f62-3a52-40f1-845b-c54c9380d402
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.horizontal_rule.field_markup
+    - paragraphs.paragraphs_type.horizontal_rule
+  module:
+    - text
+id: paragraph.horizontal_rule.default
+targetEntityType: paragraph
+bundle: horizontal_rule
+mode: default
+content:
+  field_markup:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

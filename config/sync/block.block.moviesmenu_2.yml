@@ -1,0 +1,25 @@
+uuid: eca27a68-f80b-4987-9de8-1e6989f999f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.movies-menu
+  module:
+    - system
+  theme:
+    - bootstrap5
+id: moviesmenu_2
+theme: bootstrap5
+region: nav_branding
+weight: 0
+provider: null
+plugin: 'system_menu_block:movies-menu'
+settings:
+  id: 'system_menu_block:movies-menu'
+  label: Movies-menu
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

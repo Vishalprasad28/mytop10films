@@ -1,0 +1,22 @@
+uuid: e40497c5-2ed9-4654-b6b5-232343803184
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: genere
+label: genere
+type: 'canonical_entities:taxonomy_term'
+pattern: 'reviews/[term:name]'
+selection_criteria:
+  089c416d-0b7b-4cba-b3ec-4fc21cac5e7e:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 089c416d-0b7b-4cba-b3ec-4fc21cac5e7e
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      genere: genere
+selection_logic: and
+weight: -5
+relationships: {  }
