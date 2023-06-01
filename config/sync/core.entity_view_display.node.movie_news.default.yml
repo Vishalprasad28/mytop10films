@@ -21,10 +21,17 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  field_type_of_the_movie:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 0
     region: content
-hidden:
-  field_type_of_the_movie: true
+hidden: {  }

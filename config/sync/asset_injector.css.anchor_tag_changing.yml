@@ -1,0 +1,16 @@
+uuid: 4dd1b033-9242-4407-b506-ba5e59310dee
+langcode: en
+status: true
+dependencies: {  }
+id: anchor_tag_changing
+label: 'anchor tag changing'
+code: |-
+  a {
+  text-decoration: none;
+  	
+  }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

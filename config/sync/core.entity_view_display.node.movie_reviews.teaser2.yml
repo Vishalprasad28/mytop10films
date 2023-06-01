@@ -18,7 +18,6 @@ dependencies:
     - datetime
     - image
     - layout_builder
-    - layout_discovery
     - link
     - text
     - user
@@ -28,40 +27,33 @@ third_party_settings:
     allow_custom: false
     sections:
       -
-        layout_id: layout_onecol
-        layout_settings:
-          label: title
-          context_mapping: {  }
-        components:
-          c5259743-f0fa-4c3f-8639-a840972213a2:
-            uuid: c5259743-f0fa-4c3f-8639-a840972213a2
-            region: content
-            configuration:
-              id: 'field_block:node:movie_reviews:title'
-              label: Title
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: string
-                label: hidden
-                settings:
-                  link_to_entity: true
-                third_party_settings: {  }
-            weight: 0
-            additional: {  }
-        third_party_settings: {  }
-      -
         layout_id: layout_twocol_section
         layout_settings:
           label: 'image plot'
           context_mapping: {  }
           column_widths: 25-75
         components:
-          1656e4f3-69ad-4294-b897-c89753781bdb:
-            uuid: 1656e4f3-69ad-4294-b897-c89753781bdb
+          d9a53842-9bd9-4846-a2c8-52207c3b15d5:
+            uuid: d9a53842-9bd9-4846-a2c8-52207c3b15d5
+            region: second
+            configuration:
+              id: 'field_block:node:movie_reviews:field_plot'
+              label: Plot
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_trimmed
+                label: hidden
+                settings:
+                  trim_length: 100
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          a7c63a27-f741-4bec-9daa-92d0126e2146:
+            uuid: a7c63a27-f741-4bec-9daa-92d0126e2146
             region: first
             configuration:
               id: 'field_block:node:movie_reviews:field_thumbnail'
@@ -79,25 +71,6 @@ third_party_settings:
                   image_style: thumbnail
                   image_loading:
                     attribute: lazy
-                third_party_settings: {  }
-            weight: 0
-            additional: {  }
-          d9a53842-9bd9-4846-a2c8-52207c3b15d5:
-            uuid: d9a53842-9bd9-4846-a2c8-52207c3b15d5
-            region: second
-            configuration:
-              id: 'field_block:node:movie_reviews:field_plot'
-              label: Plot
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: text_trimmed
-                label: hidden
-                settings:
-                  trim_length: 200
                 third_party_settings: {  }
             weight: 0
             additional: {  }

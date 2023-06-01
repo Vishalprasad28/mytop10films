@@ -1,4 +1,4 @@
-uuid: 13ab1b32-af37-4c04-b2f8-21ebf391350d
+uuid: 9f57ca5a-0574-4b98-95dc-75d2dbd28a09
 langcode: en
 status: true
 dependencies:
@@ -7,16 +7,16 @@ dependencies:
     - system
   theme:
     - bootstrap5
-id: quicktabsnewslisting_2
+id: quicktabsnewslistingwithpager
 theme: bootstrap5
 region: content
-weight: -3
+weight: 0
 provider: null
-plugin: 'quicktabs_block:news_listing'
+plugin: 'quicktabs_block:news_listing_with_pager'
 settings:
-  id: 'quicktabs_block:news_listing'
-  label: 'QuickTabs - News LIsting'
-  label_display: visible
+  id: 'quicktabs_block:news_listing_with_pager'
+  label: 'QuickTabs - news listing with pager'
+  label_display: '0'
   provider: quicktabs
 visibility:
   request_path:
