@@ -1,0 +1,28 @@
+uuid: 2c4d268b-f3d6-44ab-8bf2-fd00b0b0c3c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.movie_news
+    - taxonomy.vocabulary.news_type
+  module:
+    - node
+    - quick_node_clone
+    - taxonomy
+id: news_manager
+label: 'News Manager'
+weight: 5
+is_admin: null
+permissions:
+  - 'clone movie_news content'
+  - 'create movie_news content'
+  - 'create terms in news_type'
+  - 'delete any movie_news content'
+  - 'delete movie_news revisions'
+  - 'delete own movie_news content'
+  - 'delete terms in news_type'
+  - 'edit any movie_news content'
+  - 'edit own movie_news content'
+  - 'edit terms in news_type'
+  - 'revert movie_news revisions'
+  - 'view movie_news revisions'
