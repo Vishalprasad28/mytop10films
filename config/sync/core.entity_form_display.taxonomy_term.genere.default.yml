@@ -3,11 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.genere.field_icon
     - taxonomy.vocabulary.genere
   module:
+    - field_layout
+    - layout_discovery
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: taxonomy_term.genere.default
 targetEntityType: taxonomy_term
 bundle: genere
@@ -18,16 +24,6 @@ content:
     weight: 0
     region: content
     settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_icon:
-    type: entity_reference_autocomplete
-    weight: 101
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }

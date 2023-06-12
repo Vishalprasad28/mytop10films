@@ -16,12 +16,41 @@ dependencies:
     - node.type.movie_reviews
   module:
     - layout_builder
+    - layout_discovery
     - user
 third_party_settings:
   layout_builder:
     enabled: true
     allow_custom: false
     sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          3dc9cc90-159e-43bb-8c51-1c7308facf46:
+            uuid: 3dc9cc90-159e-43bb-8c51-1c7308facf46
+            region: content
+            configuration:
+              id: 'field_block:node:movie_reviews:created'
+              label: 'Created on'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: timestamp
+                label: inline
+                settings:
+                  date_format: medium
+                  custom_date_format: ''
+                  timezone: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
       -
         layout_id: layout_twocol_section
         layout_settings:

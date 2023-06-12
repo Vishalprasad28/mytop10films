@@ -32,7 +32,11 @@ module:
   entity_reference_revisions: 0
   entityqueue: 0
   entityqueue_smartqueue: 0
+  facets: 0
+  facets_searchbox_widget: 0
   field: 0
+  field_group: 0
+  field_layout: 0
   field_ui: 0
   file: 0
   filter: 0
@@ -82,6 +86,7 @@ module:
   views_data_export: 0
   views_taxonomy_term_name_depth: 0
   views_ui: 0
+  viewsreference: 0
   webform: 0
   webform_access: 0
   webform_attachment: 0

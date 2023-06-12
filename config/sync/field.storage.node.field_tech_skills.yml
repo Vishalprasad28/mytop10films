@@ -1,0 +1,39 @@
+uuid: 0ff418f0-8e7c-4854-979e-2bf43e229f00
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_tech_skills
+field_name: field_tech_skills
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Java
+      label: Java
+    -
+      value: PHP
+      label: PHP
+    -
+      value: Python
+      label: Python
+    -
+      value: C
+      label: C
+    -
+      value: C++
+      label: C++
+    -
+      value: 'C sharp'
+      label: 'C sharp'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

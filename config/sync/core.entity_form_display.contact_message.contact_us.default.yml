@@ -8,7 +8,14 @@ dependencies:
     - field.field.contact_message.contact_us.field_your_email
     - field.field.contact_message.contact_us.field_your_name
   module:
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: contact_message.contact_us.default
 targetEntityType: contact_message
 bundle: contact_us

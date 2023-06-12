@@ -6,7 +6,14 @@ dependencies:
     - field.field.paragraph.horizontal_rule.field_markup
     - paragraphs.paragraphs_type.horizontal_rule
   module:
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: paragraph.horizontal_rule.default
 targetEntityType: paragraph
 bundle: horizontal_rule

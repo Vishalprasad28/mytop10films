@@ -1,0 +1,82 @@
+uuid: 1c9e186d-ba2f-4290-9223-c8f0188f1a26
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.testing.body
+    - field.field.node.testing.field_dob
+    - field.field.node.testing.field_goals
+    - field.field.node.testing.field_key_characteristics
+    - field.field.node.testing.field_name
+    - field.field.node.testing.field_organisaton
+    - field.field.node.testing.field_tech_skills
+    - node.type.testing
+  module:
+    - datetime
+    - options
+    - text
+    - user
+id: node.testing.default
+targetEntityType: node
+bundle: testing
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_dob:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_goals:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_key_characteristics:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_organisaton:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_tech_skills:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

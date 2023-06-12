@@ -6,7 +6,14 @@ dependencies:
     - field.field.paragraph.tech_skills.field_tech_skill
     - paragraphs.paragraphs_type.tech_skills
   module:
+    - field_layout
+    - layout_discovery
     - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: paragraph.tech_skills.default
 targetEntityType: paragraph
 bundle: tech_skills

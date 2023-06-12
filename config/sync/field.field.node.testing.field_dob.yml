@@ -1,0 +1,21 @@
+uuid: 0461c4ab-1280-422d-b2fa-1405903d0fe3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dob
+    - node.type.testing
+  module:
+    - datetime
+id: node.testing.field_dob
+field_name: field_dob
+entity_type: node
+bundle: testing
+label: DOB
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

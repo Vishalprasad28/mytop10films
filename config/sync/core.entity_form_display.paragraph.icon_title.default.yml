@@ -6,6 +6,14 @@ dependencies:
     - field.field.paragraph.icon_title.field_icon
     - field.field.paragraph.icon_title.field_icon_decs
     - paragraphs.paragraphs_type.icon_title
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: paragraph.icon_title.default
 targetEntityType: paragraph
 bundle: icon_title
