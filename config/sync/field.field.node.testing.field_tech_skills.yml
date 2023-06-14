@@ -1,0 +1,21 @@
+uuid: f5b7ca38-3301-4b2f-bc69-8074aa1a2176
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tech_skills
+    - node.type.testing
+  module:
+    - options
+id: node.testing.field_tech_skills
+field_name: field_tech_skills
+entity_type: node
+bundle: testing
+label: 'Tech Skills'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

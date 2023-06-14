@@ -1,0 +1,15 @@
+uuid: 5474dd9d-4738-46e2-b748-2a8726b3b4c7
+langcode: en
+status: true
+dependencies: {  }
+name: movie_thumbnail3_130x100
+label: 'Movie thumbnail3 130x100'
+effects:
+  0b4d6cde-9ac8-46f5-b28d-a5318f40880f:
+    uuid: 0b4d6cde-9ac8-46f5-b28d-a5318f40880f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 130
+      height: 100
+      anchor: center-center

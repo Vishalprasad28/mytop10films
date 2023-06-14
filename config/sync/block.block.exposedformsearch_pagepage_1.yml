@@ -1,0 +1,23 @@
+uuid: 766295ce-d279-4dff-9be8-2ed07fa4f2b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search_page
+  module:
+    - views
+  theme:
+    - bootstrap5
+id: exposedformsearch_pagepage_1
+theme: bootstrap5
+region: nav_main
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:search_page-page_1'
+settings:
+  id: 'views_exposed_filter_block:search_page-page_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: f2e8cb6a-abf3-4c6c-b525-89346c68421c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_key_characteristics
+    - node.type.testing
+  module:
+    - text
+id: node.testing.field_key_characteristics
+field_name: field_key_characteristics
+entity_type: node
+bundle: testing
+label: 'Key Characteristics'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

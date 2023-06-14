@@ -1,0 +1,25 @@
+uuid: 9f57ca5a-0574-4b98-95dc-75d2dbd28a09
+langcode: en
+status: true
+dependencies:
+  module:
+    - quicktabs
+    - system
+  theme:
+    - bootstrap5
+id: quicktabsnewslistingwithpager
+theme: bootstrap5
+region: content
+weight: 0
+provider: null
+plugin: 'quicktabs_block:news_listing_with_pager'
+settings:
+  id: 'quicktabs_block:news_listing_with_pager'
+  label: 'QuickTabs - news listing with pager'
+  label_display: '0'
+  provider: quicktabs
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /news

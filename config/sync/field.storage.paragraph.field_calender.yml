@@ -1,0 +1,20 @@
+uuid: fc516894-c72c-4a76-8313-9c299163ff1c
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+id: paragraph.field_calender
+field_name: field_calender
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

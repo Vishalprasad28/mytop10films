@@ -1,0 +1,24 @@
+uuid: a3c0ffda-c29a-4514-80c1-6d011ab28dfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tech_skills.field_tech_skill
+    - paragraphs.paragraphs_type.tech_skills
+  module:
+    - entity_reference_revisions
+id: paragraph.tech_skills.default
+targetEntityType: paragraph
+bundle: tech_skills
+mode: default
+content:
+  field_tech_skill:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

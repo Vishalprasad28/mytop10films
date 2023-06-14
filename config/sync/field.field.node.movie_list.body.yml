@@ -1,0 +1,23 @@
+uuid: b8cd6cb8-81c2-4361-8920-b9f0b1bbf4f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.movie_list
+  module:
+    - text
+id: node.movie_list.body
+field_name: body
+entity_type: node
+bundle: movie_list
+label: 'Why these are in the list'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

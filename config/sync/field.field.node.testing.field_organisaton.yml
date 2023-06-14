@@ -1,0 +1,19 @@
+uuid: 379ceadc-0681-4722-84ed-3ec3003b6ed7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organisaton
+    - node.type.testing
+id: node.testing.field_organisaton
+field_name: field_organisaton
+entity_type: node
+bundle: testing
+label: Organisaton
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

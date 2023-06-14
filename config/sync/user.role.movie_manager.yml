@@ -1,0 +1,34 @@
+uuid: 1a0d84d5-d9c8-48ac-b903-64bb920be0a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.movie_list
+    - node.type.movie_news
+    - node.type.movie_reviews
+  module:
+    - node
+    - quick_node_clone
+id: movie_manager
+label: 'Movie Manager'
+weight: 4
+is_admin: null
+permissions:
+  - 'clone movie_list content'
+  - 'clone movie_reviews content'
+  - 'create movie_list content'
+  - 'create movie_reviews content'
+  - 'delete any movie_list content'
+  - 'delete any movie_reviews content'
+  - 'delete movie_list revisions'
+  - 'delete movie_reviews revisions'
+  - 'delete own movie_list content'
+  - 'delete own movie_reviews content'
+  - 'edit any movie_news content'
+  - 'edit any movie_reviews content'
+  - 'edit own movie_list content'
+  - 'edit own movie_reviews content'
+  - 'revert movie_list revisions'
+  - 'revert movie_reviews revisions'
+  - 'view movie_list revisions'
+  - 'view movie_reviews revisions'

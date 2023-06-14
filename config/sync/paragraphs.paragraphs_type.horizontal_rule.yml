@@ -1,0 +1,10 @@
+uuid: 501d7960-b9a6-45b2-9fc6-e9f16c98e23e
+langcode: en
+status: true
+dependencies: {  }
+id: horizontal_rule
+label: 'horizontal rule'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

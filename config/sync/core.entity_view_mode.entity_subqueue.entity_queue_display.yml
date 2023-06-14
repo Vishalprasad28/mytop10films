@@ -1,0 +1,10 @@
+uuid: 3f9dbb53-b281-46be-9fb2-80bd8cdd3ec4
+langcode: en
+status: true
+dependencies:
+  module:
+    - entityqueue
+id: entity_subqueue.entity_queue_display
+label: 'Entity Queue display'
+targetEntityType: entity_subqueue
+cache: true

@@ -1,0 +1,12 @@
+uuid: b24a151f-7581-424d-ac84-ea12f8d49ee2
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__movie_search_page__page_1
+name: 'search_api:views_page__movie_search_page__page_1'
+filter_key: ''
+url_processor: query_string
+breadcrumb:
+  active: true
+  before: true
+  group: false

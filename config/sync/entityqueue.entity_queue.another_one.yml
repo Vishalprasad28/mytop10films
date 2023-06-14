@@ -1,0 +1,26 @@
+uuid: 70b19ce9-2e70-43f2-820a-43e8f286a647
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: another_one
+label: 'Multi sub queue'
+handler: multiple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      movie_news: movie_news
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: movie_reviews
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

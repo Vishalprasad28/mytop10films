@@ -1,0 +1,30 @@
+uuid: 576f91c1-53a6-4579-9147-251265662801
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.tech_skills
+    - field.field.paragraph.icon_title.field_icon
+    - field.field.paragraph.icon_title.field_icon_decs
+    - paragraphs.paragraphs_type.icon_title
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.icon_title.tech_skills
+targetEntityType: paragraph
+bundle: icon_title
+mode: tech_skills
+content:
+  field_icon_decs:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_icon: true

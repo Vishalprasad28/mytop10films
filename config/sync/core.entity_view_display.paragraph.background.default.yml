@@ -1,0 +1,24 @@
+uuid: ada3166a-ee6f-42d7-8ca3-9c2eeec3392e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.background.field_personal_infos
+    - paragraphs.paragraphs_type.background
+  module:
+    - entity_reference_revisions
+id: paragraph.background.default
+targetEntityType: paragraph
+bundle: background
+mode: default
+content:
+  field_personal_infos:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

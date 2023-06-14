@@ -1,0 +1,22 @@
+uuid: 0b068ae7-859a-42e1-b2d5-63036e3c61fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: news_url_alias
+label: 'News Url alias'
+type: 'canonical_entities:node'
+pattern: 'news/[node:title]'
+selection_criteria:
+  cee7717f-ba95-4660-8911-1fd36e7197a2:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: cee7717f-ba95-4660-8911-1fd36e7197a2
+    context_mapping:
+      node: node
+    bundles:
+      movie_news: movie_news
+selection_logic: and
+weight: -5
+relationships: {  }

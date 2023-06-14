@@ -1,0 +1,18 @@
+uuid: b406dded-74ef-4300-9c35-ea89d0a7c1ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Movie Reviews'
+type: movie_reviews
+description: 'about the movies'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

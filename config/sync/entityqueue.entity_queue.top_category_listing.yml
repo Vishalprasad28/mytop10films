@@ -1,0 +1,26 @@
+uuid: 21444f97-1e00-4865-904a-9308bf52d360
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: top_category_listing
+label: 'Top category listing'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      movie_news: movie_news
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

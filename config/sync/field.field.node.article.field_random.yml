@@ -1,0 +1,29 @@
+uuid: 02c0ba0b-980f-4c88-8238-cabe4c746fbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_random
+    - node.type.article
+    - taxonomy.vocabulary.genere
+id: node.article.field_random
+field_name: field_random
+entity_type: node
+bundle: article
+label: random
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      genere: genere
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

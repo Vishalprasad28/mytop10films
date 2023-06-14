@@ -1,0 +1,277 @@
+uuid: db6cc5f0-b14f-46ee-bbfd-a9c165249177
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser2
+    - field.field.node.movie_reviews.field_buy_on_dvd
+    - field.field.node.movie_reviews.field_genere
+    - field.field.node.movie_reviews.field_in_cinemas_link
+    - field.field.node.movie_reviews.field_netflix
+    - field.field.node.movie_reviews.field_plot
+    - field.field.node.movie_reviews.field_release_date
+    - field.field.node.movie_reviews.field_review
+    - field.field.node.movie_reviews.field_thumbnail
+    - field.field.node.movie_reviews.field_trailer_link
+    - node.type.movie_reviews
+  module:
+    - datetime
+    - image
+    - layout_builder
+    - link
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'image plot'
+          context_mapping: {  }
+          column_widths: 25-75
+        components:
+          d9a53842-9bd9-4846-a2c8-52207c3b15d5:
+            uuid: d9a53842-9bd9-4846-a2c8-52207c3b15d5
+            region: second
+            configuration:
+              id: 'field_block:node:movie_reviews:field_plot'
+              label: Plot
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_trimmed
+                label: hidden
+                settings:
+                  trim_length: 100
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          a7c63a27-f741-4bec-9daa-92d0126e2146:
+            uuid: a7c63a27-f741-4bec-9daa-92d0126e2146
+            region: first
+            configuration:
+              id: 'field_block:node:movie_reviews:field_thumbnail'
+              label: Thumbnail
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: thumbnail
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_fourcol_section
+        layout_settings:
+          label: links
+          context_mapping: {  }
+        components:
+          c3b90854-9616-4f29-adfa-098bcaa55d4e:
+            uuid: c3b90854-9616-4f29-adfa-098bcaa55d4e
+            region: first
+            configuration:
+              id: 'field_block:node:movie_reviews:field_trailer_link'
+              label: 'Trailer Link'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          5411e9e7-ced6-4d0c-a520-714f71792a82:
+            uuid: 5411e9e7-ced6-4d0c-a520-714f71792a82
+            region: second
+            configuration:
+              id: 'field_block:node:movie_reviews:field_in_cinemas_link'
+              label: 'In cinemas Link'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          f31e2796-4c1b-4bca-b126-a20b37448d21:
+            uuid: f31e2796-4c1b-4bca-b126-a20b37448d21
+            region: third
+            configuration:
+              id: 'field_block:node:movie_reviews:field_buy_on_dvd'
+              label: 'Buy on DVD'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          e170d334-6ad5-4b45-adcb-a21ccbefb9fd:
+            uuid: e170d334-6ad5-4b45-adcb-a21ccbefb9fd
+            region: fourth
+            configuration:
+              id: 'field_block:node:movie_reviews:field_netflix'
+              label: Netflix
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.movie_reviews.teaser2
+targetEntityType: node
+bundle: movie_reviews
+mode: teaser2
+content:
+  field_buy_on_dvd:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_genere:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_in_cinemas_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_netflix:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  field_plot:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_release_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_review:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_thumbnail:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_trailer_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

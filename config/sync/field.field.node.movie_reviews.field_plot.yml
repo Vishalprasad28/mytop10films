@@ -1,0 +1,21 @@
+uuid: 5ac78cda-5b7c-419d-addc-74f44a1635c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plot
+    - node.type.movie_reviews
+  module:
+    - text
+id: node.movie_reviews.field_plot
+field_name: field_plot
+entity_type: node
+bundle: movie_reviews
+label: Plot
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,163 @@
+uuid: d45d00b3-4b3f-46b4-a7aa-88be5e3b4c53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.movie_reviews.field_buy_on_dvd
+    - field.field.node.movie_reviews.field_genere
+    - field.field.node.movie_reviews.field_in_cinemas_link
+    - field.field.node.movie_reviews.field_netflix
+    - field.field.node.movie_reviews.field_plot
+    - field.field.node.movie_reviews.field_release_date
+    - field.field.node.movie_reviews.field_review
+    - field.field.node.movie_reviews.field_thumbnail
+    - field.field.node.movie_reviews.field_trailer_link
+    - image.style.thumbnail
+    - node.type.movie_reviews
+  module:
+    - datetime
+    - field_layout
+    - image
+    - layout_discovery
+    - link
+    - path
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.movie_reviews.default
+targetEntityType: node
+bundle: movie_reviews
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_buy_on_dvd:
+    type: link_default
+    weight: 10
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_genere:
+    type: entity_reference_autocomplete
+    weight: 14
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_in_cinemas_link:
+    type: link_default
+    weight: 9
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_netflix:
+    type: link_default
+    weight: 11
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_plot:
+    type: text_textarea
+    weight: 15
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_release_date:
+    type: datetime_default
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_review:
+    type: text_textarea
+    weight: 16
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_thumbnail:
+    type: image_image
+    weight: 13
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_trailer_link:
+    type: link_default
+    weight: 8
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

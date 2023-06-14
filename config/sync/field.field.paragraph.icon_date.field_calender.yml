@@ -1,0 +1,33 @@
+uuid: 4b7ff628-6ee5-4406-9946-cfad5787191a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_calender
+    - media.type.image
+    - paragraphs.paragraphs_type.icon_date
+  content:
+    - 'media:image:c84a7956-e8f2-4a0b-8825-b9e595f31c5b'
+id: paragraph.icon_date.field_calender
+field_name: field_calender
+entity_type: paragraph
+bundle: icon_date
+label: calender
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: c84a7956-e8f2-4a0b-8825-b9e595f31c5b
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

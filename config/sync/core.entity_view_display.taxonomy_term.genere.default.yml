@@ -1,0 +1,22 @@
+uuid: 7b824184-d3e7-4080-a7ea-2442f5069e11
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.genere
+  module:
+    - text
+id: taxonomy_term.genere.default
+targetEntityType: taxonomy_term
+bundle: genere
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

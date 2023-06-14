@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: faf23360-832b-429c-a365-31c422f897a3
+name: Drupal
+mail: vishaldemo28@gmail.com
+slogan: 'hello there'
+page:
+  403: ''
+  404: ''
+  front: /node/613
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: vishaldemo28@gmail.com

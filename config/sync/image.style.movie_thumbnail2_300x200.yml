@@ -1,0 +1,15 @@
+uuid: 1e50fd67-d6ca-4c60-8312-0ce7edef16d7
+langcode: en
+status: true
+dependencies: {  }
+name: movie_thumbnail2_300x200
+label: 'Movie thumbnail2 300x200'
+effects:
+  a2ee0b52-2b85-4f38-adcc-7859e2608edd:
+    uuid: a2ee0b52-2b85-4f38-adcc-7859e2608edd
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 200
+      anchor: center-center
